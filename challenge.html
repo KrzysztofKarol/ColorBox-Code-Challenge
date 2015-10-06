@@ -1,4 +1,4 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <html lang='en'>
 <head>
 <title>Puppy time</title>
@@ -20,6 +20,20 @@ Here are some photos of my dog:
 <a class='youtube' href="http://www.youtube.com/embed/1LBJSy0Fzmc?rel=0" title="Envy Labs Office Tour">Want to know what it's like inside Envy Labs?</a>
 </p>
 
-
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-colorbox/jquery.colorbox-min.js"></script>
+<script>
+    $(function () {
+        $('a[rel="photo"]').colorbox({
+            innerWidth: 400,
+            innerHeight: 400
+        });
+        $('.youtube').colorbox({
+            iframe: true,
+            innerWidth: 425,
+            innerHeight: 344
+        });
+    })
+</script>
 </body>
 </html>
