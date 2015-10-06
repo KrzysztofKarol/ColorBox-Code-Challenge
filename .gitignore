@@ -1,4 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
-/bower_components
+/bower_components/jquery/*
+!/bower_components/jquery/dist
+/bower_components/jquery/dist/*
 !/bower_components/jquery/dist/jquery.min.js
+
+/bower_components/jquery-colorbox/*
 !/bower_components/jquery-colorbox/jquery.colorbox.js
